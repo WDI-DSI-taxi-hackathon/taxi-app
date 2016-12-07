@@ -7,6 +7,8 @@ const cookieParser  = require('cookie-parser');
 const bodyParser = require('body-parser');
 const app     = express();
 const PORT    = process.argv[2] || process.env.PORT || 3000;
+const taxiRouter = require('./routes/taxi');
+
 
 app.use(logger('dev'));
 
@@ -15,5 +17,8 @@ app.use(express.static(path.join(__dirname, 'dist')));
 app.use(cookieParser());
 
 app.use(bodyParser.json());
+
+app.use('/taxis', taxiRouter);
+// app.use('/taxi', jsonRouter);
 
 app.listen(PORT, () => console.log('server here! listening on', PORT));
