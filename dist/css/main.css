@@ -37,4 +37,64 @@ body {
     100% {left:35%; opacity: .99; color: yellow;}
 }
 
+
+p {
+  font-size: 24px;
+  font-family: 'Arial', sans-serif;
+  display: inline-block;
+  text-align: center;
+}
+
+#day, #pickuphour {
+  font-size: 24px;
+  font-family: 'Arial', sans-serif;
+  margin-left: 10px;
+  text-align: center;
+}
+
+#zip {
+  text-align: center;
+  display: block;
+}
+
+input {
+  font-size: 24px;
+
+}
+
+button {
+  font-size: 24px;
+}
+
+#flex-parent {
+  text-align: center;
+}
+
+#flex-parent p {
+  margin: 0 30px 0 30px;
+}
+
+#submit-button {
+  /*text-align: center;*/
+  /*margin: 0 auto;*/
+  margin: 0;
+  height: 20px;
+  width: 30px;
+
+  font-size: 40px;
+}
+
+/*#test{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}*/
+
+#submit-button input {
+  position: relative;
+  /*left: 50%;*/
+  margin: 0 auto;
+}
+
 /*# sourceMappingURL=main.css.map*/

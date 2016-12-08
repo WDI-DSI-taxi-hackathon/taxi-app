@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './Form.css';
 
 class Form extends Component {
 
@@ -49,7 +50,7 @@ postData() {
   render(){
     return(
       <div>
-
+      <div id="flex-parent">
         <p>Day
          <select id="day" name="day" onChange={(e) => this.updateDay(e)}>
             <option value='1'>1</option>
@@ -57,11 +58,12 @@ postData() {
             <option value='3'>3</option>
           </select>
         </p>
-
-          <p>Hour <input type = "int" name = "hour" onChange={(e) => this.updateHour(e)} /> </p>
-         <p>Zipcode <input type = "int" name = "zipcode" onChange={(e) => this.updateZip(e)} /></p>
-
-       <input type = "submit" value = "submit" onClick={() => this.postData()} />
+        <p>Hour <input type = "int" name = "hour" onChange={(e) => this.updateHour(e)} /> </p>
+       </div>
+       <div id="zip">
+        <p>Zipcode <input type = "int" name = "zipcode" onChange={(e) => this.updateZip(e)} /></p>
+        <input type = "submit" value = "submit" onClick={() => this.postData()} />
+       </div>
       </div>
     );
   }

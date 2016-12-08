@@ -57,8 +57,8 @@ class App extends Component {
         <div id="parent-div">
           <h1>Hey This Page Loaded!</h1>
           <Form />
-          <p>hello {this.state.data}</p>
-          <button onClick={this.getTaxiData.bind(this)}>click</button>
+          {/*<p>hello {this.state.data}</p>
+          <button onClick={this.getTaxiData.bind(this)}>click</button>*/}
           <h2>Bubble Chart</h2>
           <div id="bubbles">
             <Chart
