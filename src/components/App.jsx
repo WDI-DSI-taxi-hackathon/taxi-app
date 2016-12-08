@@ -41,8 +41,7 @@ class App extends Component {
   };
 
   getTaxiData() {
-    console.log('getting taxi data')
-    fetch(`/taxis`)
+    fetch(`/`)
       .then(r => r.json())
       .then((data) => {
         this.setState({

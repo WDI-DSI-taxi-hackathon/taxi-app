@@ -7,7 +7,7 @@ function getData(req, res, next) {
     // res.taxi = data
     // console.log('res.taxi is:', data)
     // next();
-
+    console.log('here')
     fetch('https://localhost:4000/result')
     .then(r => r.json())
     .then((data) => {
