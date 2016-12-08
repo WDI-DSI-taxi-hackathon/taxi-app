@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './Form.css';
 
 class Form extends Component {
 
@@ -21,6 +22,7 @@ class Form extends Component {
   render(){
     return(
       <div>
+      <div id="flex-parent">
         <p>Day
          <select id="day" name="day">
             <option value='1'>1</option>
@@ -29,9 +31,11 @@ class Form extends Component {
           </select>
         </p>
        <p>Hour <input type = "int" name = "hour" /></p>
+       </div>
+       <div id="zip">
        <p>Zipcode <input type = "int" name = "zipcode" /></p>
-
        <input type = "submit" value = "submit" />
+       </div>
       </div>
     );
   }

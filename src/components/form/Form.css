@@ -2,9 +2,10 @@ p {
   font-size: 24px;
   font-family: 'Arial', sans-serif;
   display: inline-block;
+  text-align: center;
 }
 
-#Day, #pickuphour {
+#day, #pickuphour {
   font-size: 24px;
   font-family: 'Arial', sans-serif;
   margin-left: 10px;
@@ -36,7 +37,6 @@ button {
 #submit-button {
   /*text-align: center;*/
   /*margin: 0 auto;*/
-
   margin: 0;
   height: 20px;
   width: 30px;
@@ -44,12 +44,12 @@ button {
   font-size: 40px;
 }
 
-#test{
+/*#test{
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100vw;
-}
+}*/
 
 #submit-button input {
   position: relative;
