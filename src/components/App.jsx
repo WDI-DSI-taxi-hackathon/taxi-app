@@ -11,29 +11,29 @@ class App extends Component {
 
     this.state = {
       AvgSpd: 0,
-      tipAmount: 0,
+      tipPercent: 0,
       totalAmount: 0,
       tripDistance: 0,
       tripCount: 0,
       data: [],
       avgSpeed: {
         children: [
-            { name: "Average Speed", value: 12.26 },
-            { name: "Your Speed", value: 0 },
+            { name: "Average Speed", value: 12.38 },
+            { name: "Your Speed", value: 10 },
         ]},
       tipAmount: {
         children: [
-            { name: "Average Tip Amount", value: 1.60 },
-            { name: "Your Tip Amount", value: 0 },
+            { name: "Average Tip Percent", value: 19.33 },
+            { name: "Your Tip Percent", value: 9 },
         ]},
       totalAmount: {
         children: [
-            { name: "Average Total Amount", value: 14.66 },
+            { name: "Average Total Amount", value: 16.03 },
             { name: "Your Total Amount", value: 0 },
-        ]},   
+        ]},
        tripDistance: {
         children: [
-            { name: "Average Trip Distance", value: 2.55 },
+            { name: "Average Trip Distance", value: 2.67 },
             { name: "Your Trip Distance", value: 0 },
 
         ]}
@@ -41,6 +41,7 @@ class App extends Component {
   };
 
   getTaxiData() {
+    console.log('getting taxi data')
     fetch(`/taxis`)
       .then(r => r.json())
       .then((data) => {
@@ -69,7 +70,7 @@ class App extends Component {
               type={"bubble"}
               diameter={200}
               showTooltips={true}
-              data={this.state.tipAmount}
+              data={this.state.tipPercent}
           />
           <Chart
               type={"bubble"}
@@ -82,7 +83,7 @@ class App extends Component {
               diameter={200}
               showTooltips={true}
               data={this.state.tripDistance}
-          />                    
+          />
       </div>
     );
   }
