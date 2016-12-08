@@ -1,0 +1,38 @@
+h1 {
+  text-align: center;
+  font-size: 48px;
+  font-family: 'Arial', sans-serif;
+}
+
+h2 {
+  text-align: center;
+}
+
+.chart {
+  /*text-align: center;*/
+}
+
+body {
+  background-image: url('http://3.bp.blogspot.com/-HvQGgrrrVDA/UtjOceAkApI/AAAAAAAAFyA/yqV5ENWaPdQ/s1600/new-york-city-Taxi-black-and-white-photography1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#parent-div {
+  margin: 5%;
+  opacity: 0.8;
+  background-color: #FAFAFA;
+  padding: 20px;
+}
+
+#bubbles {
+  position: relative;
+  animation-name: bubbles;
+  animation-duration: 2s;
+  animation: bubbles 2.0s forwards;
+}
+
+@keyframes bubbles {
+    0%   {left:0%; opacity: 0; color: red;}
+    100% {left:35%; opacity: .99; color: yellow;}
+}

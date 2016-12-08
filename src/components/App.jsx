@@ -30,7 +30,7 @@ class App extends Component {
         children: [
             { name: "Average Total Amount", value: 14.66 },
             { name: "Your Total Amount", value: 0 },
-        ]},   
+        ]},
        tripDistance: {
         children: [
             { name: "Average Trip Distance", value: 2.55 },
@@ -54,35 +54,39 @@ class App extends Component {
   render(){
     return (
       <div>
-        <h1>Hey</h1>
-        <Form />
-        <p>hello {this.state.data}</p>
-        <button onClick={this.getTaxiData.bind(this)}>click</button>
-        <h2>Bubble Chart</h2>
-          <Chart
-              type={"bubble"}
-              diameter={200}
-              showTooltips={true}
-              data={this.state.avgSpeed}
-          />
-          <Chart
-              type={"bubble"}
-              diameter={200}
-              showTooltips={true}
-              data={this.state.tipAmount}
-          />
-          <Chart
-              type={"bubble"}
-              diameter={200}
-              showTooltips={true}
-              data={this.state.totalAmount}
-          />
-          <Chart
-              type={"bubble"}
-              diameter={200}
-              showTooltips={true}
-              data={this.state.tripDistance}
-          />                    
+        <div id="parent-div">
+          <h1>Hey This Page Loaded!</h1>
+          <Form />
+          <p>hello {this.state.data}</p>
+          <button onClick={this.getTaxiData.bind(this)}>click</button>
+          <h2>Bubble Chart</h2>
+          <div id="bubbles">
+            <Chart
+                type={"bubble"}
+                diameter={200}
+                showTooltips={true}
+                data={this.state.avgSpeed}
+            />
+            <Chart
+                type={"bubble"}
+                diameter={200}
+                showTooltips={true}
+                data={this.state.tipAmount}
+            />
+            <Chart
+                type={"bubble"}
+                diameter={200}
+                showTooltips={true}
+                data={this.state.totalAmount}
+            />
+            <Chart
+                type={"bubble"}
+                diameter={200}
+                showTooltips={true}
+                data={this.state.tripDistance}
+            />
+          </div>
+        </div>
       </div>
     );
   }

@@ -1,2 +1,98 @@
+h1 {
+  text-align: center;
+  font-size: 48px;
+  font-family: 'Arial', sans-serif;
+}
+
+h2 {
+  text-align: center;
+}
+
+.chart {
+  /*text-align: center;*/
+}
+
+body {
+  background-image: url('http://3.bp.blogspot.com/-HvQGgrrrVDA/UtjOceAkApI/AAAAAAAAFyA/yqV5ENWaPdQ/s1600/new-york-city-Taxi-black-and-white-photography1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#parent-div {
+  margin: 5%;
+  opacity: 0.8;
+  background-color: #FAFAFA;
+  padding: 20px;
+}
+
+#bubbles {
+  position: relative;
+  animation-name: bubbles;
+  animation-duration: 2s;
+  animation: bubbles 2.0s forwards;
+}
+
+@keyframes bubbles {
+    0%   {left:0%; opacity: 0; color: red;}
+    100% {left:35%; opacity: .99; color: yellow;}
+}
+p {
+  font-size: 24px;
+  font-family: 'Arial', sans-serif;
+  display: inline-block;
+}
+
+#Day, #pickuphour {
+  font-size: 24px;
+  font-family: 'Arial', sans-serif;
+  margin-left: 10px;
+  text-align: center;
+}
+
+#zip {
+  text-align: center;
+  display: block;
+}
+
+input {
+  font-size: 24px;
+
+}
+
+button {
+  font-size: 24px;
+}
+
+#flex-parent {
+  text-align: center;
+}
+
+#flex-parent p {
+  margin: 0 30px 0 30px;
+}
+
+#submit-button {
+  /*text-align: center;*/
+  /*margin: 0 auto;*/
+
+  margin: 0;
+  height: 20px;
+  width: 30px;
+
+  font-size: 40px;
+}
+
+#test{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+#submit-button input {
+  position: relative;
+  /*left: 50%;*/
+  margin: 0 auto;
+}
 
 /*# sourceMappingURL=main.css.map*/

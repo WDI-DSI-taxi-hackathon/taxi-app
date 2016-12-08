@@ -1,4 +1,5 @@
-     import React, { Component } from 'react'; 
+     import React, { Component } from 'react';
+     import './Form.css';
 
      class Form extends Component {
 
@@ -6,7 +7,8 @@
         return(
           <div>
             <form action = "http://localhost:4000/result" method = "POST">
-               <p>Day of the week 
+              <div id="flex-parent">
+               <p>Day of the week
                    <select id="Day" name="Day">
                       <option value='0'>Sun</option>
                       <option value='1'>Mon</option>
@@ -17,9 +19,9 @@
                       <option value='6'>Sat</option>
                       <option value='7'>Sun</option>
                   </select>
-               </p>  
-               <p>Pickup Hour 
-                  <select id="pickuphour" name="pickuphour"> 
+               </p>
+               <p>Pickup Hour
+                  <select id="pickuphour" name="pickuphour">
                       <option value="00">00</option>
                       <option value="01">01</option>
                       <option value="02">02</option>
@@ -45,11 +47,12 @@
                       <option value="12">22</option>
                       <option value="12">23</option>
                 </select>
-
                </p>
-               <p>Zipcode <input type = "int" name = "Zipcode" /></p>
-
-               <p><input type = "submit" value = "submit" /></p>
+               </div>
+               <p id="zip">Zipcode <input type = "int" name = "Zipcode" /></p>
+              <div id="test">
+               <p id="submit-button"><input type = "submit" value = "submit" /></p>
+              </div>
             </form>
         </div>
       );
