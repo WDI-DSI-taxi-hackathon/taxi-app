@@ -46,8 +46,6 @@ postData() {
 
 
 
-
-
   render(){
     return(
       <div>
@@ -60,8 +58,8 @@ postData() {
           </select>
         </p>
 
-         <p>Hour <input type = "int" name = "hour" onChange={(e) => this.updateHour(e)} ></p>
-         <p>Zipcode <input type = "int" name = "zipcode" onChange={(e) => this.updateZip(e)} ></p>
+          <p>Hour <input type = "int" name = "hour" onChange={(e) => this.updateHour(e)} /> </p>
+         <p>Zipcode <input type = "int" name = "zipcode" onChange={(e) => this.updateZip(e)} /></p>
 
        <input type = "submit" value = "submit" onClick={() => this.postData()} />
       </div>
